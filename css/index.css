@@ -3,6 +3,10 @@
     margin: none;
 }
 
+*::selection {
+    background-color: rebeccapurple;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,24 +36,50 @@ body {
     overflow-x: hidden;
 }
 
-
-@media screen and (max-width: 992px) {
-    .visible-md {
-      display: none;
-    }
-  }
-
 .greetings .first-line {
-    font-size: 3rem;
+    font-size: 2rem;
     mix-blend-mode: difference;
 }
 
 .greetings .second-line {
-    font-size: 7rem;
+    font-size: 8rem;
     mix-blend-mode: difference;
 }
 
 .greetings .third-line {
-    font-size: 2rem;
+    font-size: 3rem;
     mix-blend-mode: difference;
+}
+
+.greetings .text {
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    mix-blend-mode: difference;
+}
+
+.greetings {
+    user-select: none;
+}
+
+@media screen and (max-width: 992px) {
+
+    .visible-md {
+      display: none;
+    }
+
+    .greetings .first-line {
+        font-size: 2rem;
+        mix-blend-mode: difference;
+    }
+    
+    .greetings .second-line {
+        font-size: 5rem;
+        mix-blend-mode: difference;
+    }
+    
+    .greetings .third-line {
+        font-size: 3rem;
+        mix-blend-mode: difference;
+    }
+
 }
