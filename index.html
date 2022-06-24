@@ -7,21 +7,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="HandheldFriendly" content="true">
 
-    <title>My portfolio</title>
+    <title>Luca Bonaldo</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="modules/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="modules/bootstrap-icons/font/bootstrap-icons.css">
+
+
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/scrollbar.css">
+    <link rel="stylesheet" href="css/colors.css">
 
 </head>
 
 <body>
 
-    <h1>Hello world</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainMenuNav">
+        <div class="container-fluid">
+
+            <div class="mx-3 visible-md"></div>
+
+            <a class="navbar-brand font-monospace fs-3 text-dark" href="#"><i class="bi bi-code-slash"></i> Luca Bonaldo</a>
+
+            <button class="navbar-toggler" type="button"  role="button"  aria-expanded="false" aria-label="Toggle Offcanvas Menu" onclick="toggleOffcanvas()">
+                <i class="bi bi-three-dots h1 text-dark"></i>
+            </button>
+
+            <div class=" collapse navbar-collapse justify-content-around mx-5">
+                <ul class="navbar-nav justify-content-around w-50 mx-5">
+                    <li class="nav-item">
+                        <a class="nav-link font-monospace fs-5" aria-current="page" href="#me">/me</a>
+                    </li>
+                    <div class="mx-4"></div>
+                    <li class="nav-item">
+                        <a class="nav-link font-monospace fs-5" href="#experience">/experience</a>
+                    </li>
+                    <div class="mx-4"></div>
+                    <li class="nav-item">
+                        <a class="nav-link font-monospace fs-5" href="#projects">/projects</a>
+                    </li>
+                    <div class="mx-4"></div>
+                    <li class="nav-item">
+                        <a class="nav-link font-monospace fs-5" href="#contact">/contact</a>
+                    </li>
+
+                </ul>
+          </div>
+        </div>
+    </nav>
 
 
-    <script src="js/jquery-3.6.0.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.js"></script>
+    <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasCollapseMenu" aria-labelledby="offcanvasCollapseMenuLabel">
+        <div class="offcanvas-header">
+            <p class="h5 offcanvas-title mx-4" id="offcanvasCollapseMenuLabel">/menu</p>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+            <ul class="navbar-nav justify-content-around w-50 h-75 mx-5">
+                <li class="nav-item">
+                    <a class="nav-link active font-monospace fs-5" aria-current="page" href="#page-section-me" data-bs-dismiss="offcanvas" onclick="jumpTo('page-section-me')">/me</a>
+                </li>
+                <div class="mx-4"></div>
+                <li class="nav-item">
+                    <a class="nav-link font-monospace fs-5" href="#page-section-experience" data-bs-dismiss="offcanvas" onclick="jumpTo('page-section-experience')">/experience</a>
+                </li>
+                <div class="mx-4"></div>
+                <li class="nav-item">
+                    <a class="nav-link font-monospace fs-5" href="#page-section-projects" data-bs-dismiss="offcanvas" onclick="jumpTo('page-section-projects')">/projects</a>
+                </li>
+                <div class="mx-4"></div>
+                <li class="nav-item">
+                    <a class="nav-link font-monospace fs-5" href="#page-section-contact" data-bs-dismiss="offcanvas" onclick="jumpTo('page-section-contact')">/contact</a>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+
+    <div class="content content-bg d-flex flex-column justify-content-center">
+
+        <a name="#"></a>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col content-bg d-flex flex-column greetings fw-bold text-white">
+                    <p class="first-line ">Welcome, my name is</p>
+                    <p class="second-line">Luca Bonaldo.</p>
+                    <p class="third-line">I make stuff works.</p>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="content content-bg">
+
+        <a name="me"></a>
+
+        <h1>Me</h1>
+
+
+    </div>
+
+    <div class="content content-bg">
+
+        <a name="experience"></a>
+
+        <h1>Experience</h1>
+
+    </div>
+
+    <div class="content content-bg">
+
+        <a name="projects"></a>
+
+        <h1>Projects</h1>
+
+    </div>
+
+    <div class="content content-bg">
+
+        <a name="contact"></a>
+
+        <h1>Contact</h1>
+
+    </div>
+
+
+    <script src="modules/jquery/js/jquery-3.6.0.min.js"></script>
+    <script src="modules/popper/js/popper.min.js"></script>
+    <script src="modules/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/toggleOffcanvas.js"></script>
+    <script src="js/fixMenuPosition.js"></script>
 
 </body>
 
