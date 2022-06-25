@@ -1,0 +1,15 @@
+.loader-box {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    background-image: url('../img/loader-bg.svg');
+    background-position: center;
+    background-size: cover;
+}
+
+.loader {
+    display: inline-block;
+    width: 250px;
+    height: auto;
+}
