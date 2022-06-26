@@ -22,6 +22,7 @@
 
 <body>
 
+    <!--
     <div class="loader-box bg-primary d-flex align-items-center justify-content-center">
         <div class="loader-wrapper">
             <img class="loader" src="img/loader.svg"></img>
@@ -36,12 +37,14 @@
         }, 2000)
     </script>
 
+    -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainMenuNav">
         <div class="container-fluid">
 
             <div class="mx-3 visible-md"></div>
 
-            <a class="navbar-brand font-monospace fs-3 text-dark" href="#"><i class="bi bi-code-slash"></i> Luca Bonaldo</a>
+            <a class="navbar-brand font-monospace fs-3 text-dark fade-in" href="#" id="navbar-brand"><i class="bi bi-code-slash"></i> Luca Bonaldo</a>
 
             <button class="navbar-toggler" type="button" role="button" aria-expanded="false" aria-label="Toggle Offcanvas Menu" onclick="toggleOffcanvas()">
                 <i class="bi bi-three-dots h1 text-dark"></i>
@@ -50,19 +53,19 @@
             <div class=" collapse navbar-collapse justify-content-around mx-5">
                 <ul class="navbar-nav justify-content-around w-50 mx-5">
                     <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5" aria-current="page" href="#me">/me</a>
+                        <a class="nav-link font-monospace fs-5 fade-in" aria-current="page" href="#me" id="me-menu">/me</a>
                     </li>
                     <div class="mx-4"></div>
                     <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5" href="#experience">/experience</a>
+                        <a class="nav-link font-monospace fs-5 fade-in" href="#experience" id="experience-menu">/experience</a>
                     </li>
                     <div class="mx-4"></div>
                     <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5" href="#projects">/projects</a>
+                        <a class="nav-link font-monospace fs-5 fade-in" href="#projects" id="projects-menu">/projects</a>
                     </li>
                     <div class="mx-4"></div>
                     <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5" href="#contact">/contact</a>
+                        <a class="nav-link font-monospace fs-5 fade-in" href="#contact" id="contact-menu">/contact</a>
                     </li>
 
                 </ul>
@@ -104,14 +107,14 @@
 
         <a name="#"></a>
 
-        <div class="container content-bg d-flex flex-column greetings fw-bold text-white align-items-start g-5">
+        <div class="container-md content-bg d-flex flex-column greetings fw-bold text-white align-items-start g-5">
 
-            <p class="first-line ">Welcome, my name is</p>
-            <p class="second-line">Luca Bonaldo.</p>
-            <p class="third-line">I make stuff works.</p>
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="text w-100">
+            <p class="first-line m-0">Welcome, my name is</p>
+            <p class="second-line mt-0">Luca Bonaldo.</p>
+            <p class="third-line fade-in mt-0 mb-3">I make stuff works.</p>
+            <div class="row m-0">
+                <div class="col-md-8">
+                    <p class="text w-100 fourth-line fade-in">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
@@ -120,14 +123,19 @@
 
         </div>
 
+        <div class="my-5"></div>
+
     </div>
 
-    <div class="content content-bg">
+
+    <div class="content content-bg d-flex flex-column justify-content-center">
 
         <a name="me"></a>
 
-        <div class="container-md bg-light shadow">
+        <div class="container-md bg-light shadow fade-in">
+
             <div class="row">
+                <div class="my-2"></div>
                 <div class="col-md-6 col-12">
                     <p class="h3 mx-4 font-monospace text-secondary-light">/me</p>
                     <p class="h2">A little about me</p>
@@ -137,31 +145,28 @@
                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </div>
+                <div class="my-2"></div>
+
                 <div class="col-md-6 col-12"></div>
             </div>
 
         </div>
 
-
-    </div>
-
-    <div class="content content-bg">
+        <div class="my-5"></div>
 
         <a name="experience"></a>
 
         <h1>Experience</h1>
 
-    </div>
+        <div class="my-5"></div>
 
-    <div class="content content-bg">
 
         <a name="projects"></a>
 
         <h1>Projects</h1>
 
-    </div>
+        <div class="my-5"></div>
 
-    <div class="content content-bg">
 
         <a name="contact"></a>
 
@@ -170,11 +175,13 @@
     </div>
 
 
+
     <script src="modules/jquery/js/jquery-3.6.0.min.js"></script>
     <script src="modules/popper/js/popper.min.js"></script>
     <script src="modules/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="js/toggleOffcanvas.js"></script>
     <script src="js/fixMenuPosition.js"></script>
+    <script src="js/scrollingFadeIn.js"></script>
 
 </body>
 

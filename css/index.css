@@ -1,85 +1,134 @@
 * {
-    padding: none;
-    margin: none;
+  padding: none;
+  margin: none;
 }
 
 *::selection {
-    background-color: rebeccapurple;
+  background-color: rebeccapurple;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
-  
+
+.fade-in {
+  opacity: 0;
+}
 
 .content-bg {
-    background-image: url("../img/bg.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment:fixed;
+  background-image: url("../img/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .content {
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color: white;
-    overflow: overlay;
-    overflow-x: hidden;
-
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: white;
+  overflow: overlay;
+  overflow-x: hidden;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    overflow: overlay;
-    overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  overflow: overlay;
+  overflow-x: hidden;
 }
 
 .greetings .first-line {
-    font-size: 2rem;
-    mix-blend-mode: difference;
+  font-size: 2rem;
+  mix-blend-mode: difference;
+
 }
 
 .greetings .second-line {
-    font-size: 8rem;
-    mix-blend-mode: difference;
+  font-size: 8rem;
+  mix-blend-mode: difference;
+
 }
 
 .greetings .third-line {
-    font-size: 3rem;
-    mix-blend-mode: difference;
+  font-size: 3rem;
+  mix-blend-mode: difference;
+
+}
+
+.greetings .fourth-line {
 }
 
 .greetings .text {
-    color: rgb(255, 255, 255);
-    font-size: 1rem;
-    mix-blend-mode: difference;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  mix-blend-mode: difference;
 }
 
 .greetings {
-    user-select: none;
+  user-select: none;
 }
 
 @media screen and (max-width: 992px) {
+  .visible-md {
+    display: none;
+  }
 
-    .visible-md {
-      display: none;
-    }
+  .greetings .first-line {
+    font-size: 2rem;
+    mix-blend-mode: difference;
 
-    .greetings .first-line {
-        font-size: 2rem;
-        mix-blend-mode: difference;
-    }
-    
-    .greetings .second-line {
-        font-size: 5rem;
-        mix-blend-mode: difference;
-    }
-    
-    .greetings .third-line {
-        font-size: 3rem;
-        mix-blend-mode: difference;
-    }
+  }
 
+  .greetings .second-line {
+    font-size: 5rem;
+    mix-blend-mode: difference;
+
+  }
+
+  .greetings .third-line {
+    font-size: 3rem;
+    mix-blend-mode: difference;
+  }
+
+  .greetings .fourth-line {
+    font-size: 1.2rem;
+
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .visible-md {
+    display: none;
+  }
+
+  .greetings .first-line {
+    font-size: 1.3rem;
+    mix-blend-mode: difference;
+
+  }
+
+  .greetings .second-line {
+    font-size: 3.1rem;
+    mix-blend-mode: difference;
+
+  }
+
+  .greetings .third-line {
+    font-size: 1.6rem;
+    mix-blend-mode: difference;
+
+  }
+
+  .greetings .fourth-line {
+    font-size: 0.8rem;
+  }
+
+  .fade-in {
+    opacity: 1;
+  }
 }
