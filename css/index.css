@@ -41,22 +41,16 @@ body {
 .greetings .first-line {
   font-size: 2rem;
   mix-blend-mode: difference;
-
 }
 
 .greetings .second-line {
   font-size: 8rem;
   mix-blend-mode: difference;
-
 }
 
 .greetings .third-line {
   font-size: 3rem;
   mix-blend-mode: difference;
-
-}
-
-.greetings .fourth-line {
 }
 
 .greetings .text {
@@ -77,17 +71,15 @@ body {
   width: 10px;
   display: flex;
   flex-direction: column;
-  justify-content:end;
+  justify-content: end;
   align-items: center;
   user-select: none;
-
 }
 
 .left-bar .icon {
-
-  font-size: larger;
+  font-size: large;
   margin-bottom: 35px;
-
+  color: rgb(48, 48, 48);
 }
 
 .v-line {
@@ -104,17 +96,40 @@ body {
   width: 10px;
   display: flex;
   flex-direction: column;
-  justify-content:end;
+  justify-content: end;
   align-items: center;
-  mix-blend-mode:difference;
   user-select: none;
-
 }
 
 .right-bar p {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   margin-bottom: 35px;
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: vertical-rl;
+}
+
+.footer {
+  font-size: 1em;
+  text-align: center;
+}
+
+p a {
+  color: #2aa09b;
+  text-decoration: none;
+}
+
+p a:visited {
+  color: #2aa09b;
+}
+
+p a:hover {
+  transition: color 1s ease-in-out;
+  color: #35c9c2;
+  -webkit-transition: color 1s ease-in-out;
+  -moz-transition: color 1s ease-in-out;
+  -ms-transition: color 1s ease-in-out;
+  -o-transition: color 1s ease-in-out;
 }
 
 @media screen and (max-width: 992px) {
@@ -125,13 +140,11 @@ body {
   .greetings .first-line {
     font-size: 2rem;
     mix-blend-mode: difference;
-
   }
 
   .greetings .second-line {
     font-size: 5rem;
     mix-blend-mode: difference;
-
   }
 
   .greetings .third-line {
@@ -141,7 +154,6 @@ body {
 
   .greetings .fourth-line {
     font-size: 1.2rem;
-
   }
 
   .fade-in {
@@ -157,19 +169,16 @@ body {
   .greetings .first-line {
     font-size: 1.3rem;
     mix-blend-mode: difference;
-
   }
 
   .greetings .second-line {
     font-size: 3.1rem;
     mix-blend-mode: difference;
-
   }
 
   .greetings .third-line {
     font-size: 1.6rem;
     mix-blend-mode: difference;
-
   }
 
   .greetings .fourth-line {

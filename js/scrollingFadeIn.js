@@ -76,6 +76,34 @@ $(document).ready(function () {
     k += i
 
     setTimeout(function () {
+      $(".first-line").animate(
+        { opacity: "1" },
+        {
+          step: function (now, fx) {
+            $(this).css("transform", "translateY(" + (1 - now) * 50 + "px)"); //
+          },
+          duration: "normal",
+        },
+        "linear"
+      );
+    }, k);
+    k += i
+
+    setTimeout(function () {
+      $(".second-line").animate(
+        { opacity: "1" },
+        {
+          step: function (now, fx) {
+            $(this).css("transform", "translateY(" + (1 - now) * 50 + "px)"); //
+          },
+          duration: "normal",
+        },
+        "linear"
+      );
+    }, k);
+    k += i
+
+    setTimeout(function () {
       $(".third-line").animate(
         { opacity: "1" },
         {

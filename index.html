@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="HandheldFriendly" content="true">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="HandheldFriendly" content="true" />
 
     <title>Luca Bonaldo</title>
 
-    <link rel="stylesheet" href="modules/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="modules/bootstrap/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
 
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/scrollbar.css" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/loader.css" />
+  </head>
 
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/scrollbar.css">
-    <link rel="stylesheet" href="css/colors.css">
-    <link rel="stylesheet" href="css/loader.css">
-
-</head>
-
-<body>
-
+  <body>
     <!--
     <div class="loader-box bg-primary d-flex align-items-center justify-content-center">
         <div class="loader-wrapper">
@@ -40,152 +39,238 @@
     -->
 
     <div class="left-bar visible-md fade-in">
+        <a class="icon" target="_new" href="https://github.com/LucaBonaldoIT/">
+            <i class="bi bi-github icon"></i>
+          </a>
+      <a class="icon" target="_new" href="https://www.instagram.com/lucabonaldoit/">
         <i class="bi bi-instagram icon"></i>
+      </a>
+      <a class="icon" target="_new" href="https://twitter.com/lucabonaldoit">
         <i class="bi bi-twitter icon"></i>
+      </a>
+      <a class="icon" target="_new" href="https://www.linkedin.com/in/luca-bonaldo/">
         <i class="bi bi-linkedin icon"></i>
-        <div class="v-line"></div>
+     </a>
+      <div class="v-line"></div>
     </div>
     <div class="right-bar visible-md fade-in">
-        <p class="font-monospace">LucaBonaldoIT</p>
-        <div class="v-line"></div>
+      <p class="font-monospace">LucaBonaldoIT@gmail.com</p>
+      <div class="v-line"></div>
     </div>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light" id="mainMenuNav">
-        <div class="container-fluid">
+      <div class="container-fluid">
+        <div class="mx-3 visible-md"></div>
 
-            <div class="mx-3 visible-md"></div>
+        <a
+          class="navbar-brand font-monospace fs-3 text-dark fade-in"
+          href="#"
+          id="navbar-brand"
+          ><i class="bi bi-code-slash"></i> Luca Bonaldo</a
+        >
 
-            <a class="navbar-brand font-monospace fs-3 text-dark fade-in" href="#" id="navbar-brand"><i class="bi bi-code-slash"></i> Luca Bonaldo</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          role="button"
+          aria-expanded="false"
+          aria-label="Toggle Offcanvas Menu"
+          onclick="toggleOffcanvas()"
+        >
+          <i class="bi bi-three-dots h1 text-dark"></i>
+        </button>
 
-            <button class="navbar-toggler" type="button" role="button" aria-expanded="false" aria-label="Toggle Offcanvas Menu" onclick="toggleOffcanvas()">
-                <i class="bi bi-three-dots h1 text-dark"></i>
-            </button>
-
-            <div class=" collapse navbar-collapse justify-content-around mx-5">
-                <ul class="navbar-nav justify-content-around w-50 mx-5">
-                    <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5 fade-in" aria-current="page" href="#me" id="me-menu">/me</a>
-                    </li>
-                    <div class="mx-4"></div>
-                    <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5 fade-in" href="#experience" id="experience-menu">/experience</a>
-                    </li>
-                    <div class="mx-4"></div>
-                    <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5 fade-in" href="#projects" id="projects-menu">/projects</a>
-                    </li>
-                    <div class="mx-4"></div>
-                    <li class="nav-item">
-                        <a class="nav-link font-monospace fs-5 fade-in" href="#contact" id="contact-menu">/contact</a>
-                    </li>
-
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse justify-content-around mx-5">
+          <ul class="navbar-nav justify-content-around w-50 mx-5">
+            <li class="nav-item">
+              <a
+                class="nav-link font-monospace fs-5 fade-in"
+                aria-current="page"
+                href="#me"
+                id="me-menu"
+                >/me</a
+              >
+            </li>
+            <div class="mx-4"></div>
+            <li class="nav-item">
+              <a
+                class="nav-link font-monospace fs-5 fade-in"
+                href="#experience"
+                id="experience-menu"
+                >/experience</a
+              >
+            </li>
+            <div class="mx-4"></div>
+            <li class="nav-item">
+              <a
+                class="nav-link font-monospace fs-5 fade-in"
+                href="#projects"
+                id="projects-menu"
+                >/projects</a
+              >
+            </li>
+            <div class="mx-4"></div>
+            <li class="nav-item">
+              <a
+                class="nav-link font-monospace fs-5 fade-in"
+                href="#contact"
+                id="contact-menu"
+                >/contact</a
+              >
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
-
-    <div class="offcanvas offcanvas-end w-75" tabindex="-1" id="offcanvasCollapseMenu" aria-labelledby="offcanvasCollapseMenuLabel">
-        <div class="offcanvas-header">
-            <p class="h5 offcanvas-title mx-4" id="offcanvasCollapseMenuLabel">/menu</p>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-        </div>
-        <div class="offcanvas-body">
-
-            <ul class="navbar-nav justify-content-around w-50 h-75 mx-5">
-                <li class="nav-item">
-                    <a class="nav-link active font-monospace fs-5" aria-current="page" href="#me" data-bs-dismiss="offcanvas" onclick="jumpTo('me')">/me</a>
-                </li>
-                <i class="bi bi-three-dots-vertical"></i>
-                <li class="nav-item">
-                    <a class="nav-link font-monospace fs-5" href="#experience" data-bs-dismiss="offcanvas" onclick="jumpTo('experience')">/experience</a>
-                </li>
-                <i class="bi bi-three-dots-vertical"></i>
-                <li class="nav-item">
-                    <a class="nav-link font-monospace fs-5" href="#projects" data-bs-dismiss="offcanvas" onclick="jumpTo('projects')">/projects</a>
-                </li>
-                <i class="bi bi-three-dots-vertical"></i>
-                <li class="nav-item">
-                    <a class="nav-link font-monospace fs-5" href="#contact" data-bs-dismiss="offcanvas" onclick="jumpTo('contact')">/contact</a>
-                </li>
-
-            </ul>
-
-        </div>
+    <div
+      class="offcanvas offcanvas-end w-75"
+      tabindex="-1"
+      id="offcanvasCollapseMenu"
+      aria-labelledby="offcanvasCollapseMenuLabel"
+    >
+      <div class="offcanvas-header">
+        <p class="h5 offcanvas-title mx-4" id="offcanvasCollapseMenuLabel">
+          /menu
+        </p>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-around w-50 h-75 mx-5">
+          <li class="nav-item">
+            <a
+              class="nav-link active font-monospace fs-5"
+              aria-current="page"
+              href="#me"
+              data-bs-dismiss="offcanvas"
+              onclick="jumpTo('me')"
+              >/me</a
+            >
+          </li>
+          <i class="bi bi-three-dots-vertical"></i>
+          <li class="nav-item">
+            <a
+              class="nav-link font-monospace fs-5"
+              href="#experience"
+              data-bs-dismiss="offcanvas"
+              onclick="jumpTo('experience')"
+              >/experience</a
+            >
+          </li>
+          <i class="bi bi-three-dots-vertical"></i>
+          <li class="nav-item">
+            <a
+              class="nav-link font-monospace fs-5"
+              href="#projects"
+              data-bs-dismiss="offcanvas"
+              onclick="jumpTo('projects')"
+              >/projects</a
+            >
+          </li>
+          <i class="bi bi-three-dots-vertical"></i>
+          <li class="nav-item">
+            <a
+              class="nav-link font-monospace fs-5"
+              href="#contact"
+              data-bs-dismiss="offcanvas"
+              onclick="jumpTo('contact')"
+              >/contact</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="content content-bg d-flex flex-column justify-content-center">
+      <a name="#"></a>
 
-        <a name="#"></a>
-
-        <div class="container-md content-bg d-flex flex-column greetings fw-bold text-white align-items-start g-5">
-
-            <p class="first-line m-0">Welcome, my name is</p>
-            <p class="second-line mt-0">Luca Bonaldo.</p>
-            <p class="third-line fade-in mt-0 mb-3">I make stuff works.</p>
-            <div class="row m-0">
-                <div class="col-md-8">
-                    <p class="text w-100 fourth-line fade-in">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-            </div>
-
+      <div
+        class="container-md content-bg d-flex flex-column greetings fw-bold text-white align-items-start g-5"
+      >
+        <p class="first-line m-0 fade-in">Welcome, my name is</p>
+        <p class="second-line mt-0 fade-in">Luca Bonaldo.</p>
+        <p class="third-line fade-in mt-0 mb-3">I make stuff works.</p>
+        <div class="row m-0">
+          <div class="col-md-8">
+            <p class="text w-100 fourth-line fade-in">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
         </div>
+      </div>
 
-        <div class="my-5"></div>
-
+      <div class="my-5"></div>
     </div>
 
+    <div class="content bg-light d-flex flex-column justify-content-center">
+      <a name="me"></a>
 
-    <div class="content content-bg d-flex flex-column justify-content-center">
+      <div class="container-md col-md-9 fade-in">
+        <div class="row">
+          <div class="my-2"></div>
+          <div class="col-md-6 col-12">
+            <p class="h3 mx-4 font-monospace text-secondary-light">/me</p>
+            <p class="h2">A little about me</p>
+            <div class="my-4"></div>
+            <p class="w-100 text-">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+          <div class="my-2"></div>
 
-        <a name="me"></a>
-
-        <div class="container-md bg-light shadow fade-in">
-
-            <div class="row">
-                <div class="my-2"></div>
-                <div class="col-md-6 col-12">
-                    <p class="h3 mx-4 font-monospace text-secondary-light">/me</p>
-                    <p class="h2">A little about me</p>
-                    <div class="my-4"></div>
-                    <p class="w-100 text-">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </div>
-                <div class="my-2"></div>
-
-                <div class="col-md-6 col-12"></div>
-            </div>
-
+          <div class="col-md-6 col-12"></div>
         </div>
+      </div>
 
-        <div class="my-5"></div>
+      <div class="my-5"></div>
 
-        <a name="experience"></a>
+      <a name="experience"></a>
 
+      <div class="container-md col-md-9 fade-in">
         <h1>Experience</h1>
+      </div>
 
-        <div class="my-5"></div>
+      <div class="my-5"></div>
 
-
-        <a name="projects"></a>
-
+      <a name="projects"></a>
+      <div class="container-md col-md-9 fade-in">
         <h1>Projects</h1>
+      </div>
 
-        <div class="my-5"></div>
+      <div class="my-5"></div>
 
-
-        <a name="contact"></a>
-
+      <a name="contact"></a>
+      <div class="container-md col-md-9 fade-in">
         <h1>Contact</h1>
+      </div>
 
+      <div
+        class="footer-container container-fluid my-3 d-flex justify-content-center fade-in"
+      >
+        <p class="footer">
+          <a class="fw-bold" href="https://github.com/LucaBonaldoIT"
+            >Designed and built by Luca Bonaldo</a
+          >
+        </p>
+      </div>
     </div>
-
-
 
     <script src="modules/jquery/js/jquery-3.6.0.min.js"></script>
     <script src="modules/popper/js/popper.min.js"></script>
@@ -193,7 +278,5 @@
     <script src="js/toggleOffcanvas.js"></script>
     <script src="js/fixMenuPosition.js"></script>
     <script src="js/scrollingFadeIn.js"></script>
-
-</body>
-
+  </body>
 </html>
