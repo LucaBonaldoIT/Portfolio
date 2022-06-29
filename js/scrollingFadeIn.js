@@ -104,6 +104,29 @@ $(document).ready(function () {
       }, k);
       k += i
 
+      setTimeout(function () {
+        $(".right-bar").animate(
+          { opacity: "1" },
+          {
+            step: function (now, fx) {
+              $(this).css("transform", "translateY(" + (1 - now) * 50 + "px)"); //
+            },
+            duration: "normal",
+          },
+          "linear"
+        );
+        $(".left-bar").animate(
+          { opacity: "1" },
+          {
+            step: function (now, fx) {
+              $(this).css("transform", "translateY(" + (1 - now) * 50 + "px)"); //
+            },
+            duration: "normal",
+          },
+          "linear"
+        );
+      }, k);
+      k += i
 
   }, 0);
 
