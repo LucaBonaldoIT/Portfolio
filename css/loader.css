@@ -6,6 +6,8 @@
     background-image: url('../img/loader-bg.svg');
     background-position: center;
     background-size: cover;
+    filter: saturate(1.5);
+    -webkit-filter: saturate(1.5);
 }
 
 .loader {

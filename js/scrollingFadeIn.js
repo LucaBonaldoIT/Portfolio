@@ -156,7 +156,7 @@ $(document).ready(function () {
       }, k);
       k += i
 
-  }, 0);
+  }, 0); // Set delay to 1500 to sync with other animations
 
   /* Every time the window is scrolled ... */
   $(window).scroll(function () {
